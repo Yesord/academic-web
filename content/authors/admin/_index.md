@@ -183,6 +183,6 @@ awards:
 
 ## About Me
 
-我是**许若伦**，目前就读于 深圳大学物理与光电工程学院，大三学生。我的研究兴趣集中在光学测量领域，特别是在事件相机技术的应用与发展方面。在这一领域，我正积极参与相关的研究项目，探索事件相机在动态场景下的高精度成像技术。
-在技术能力方面，我具备扎实的嵌入式开发经验，熟悉多种开发平台和编程语言，能够有效地进行硬件与软件的协同设计。此外，我对硬件系统的设计与实现有深入理解，能够独立完成从概念设计到原型制作的各个阶段。
-我热衷于将理论知识应用于实际问题，期望通过进一步的研究和实践，推动光学测量技术的创新与发展。同时，我也希望能够与同行和专家进行深入的学术交流，以拓宽视野，提升专业素养。
+My name is **Xu Ruolun**, and I am currently a junior student at the College of Physics and Optoelectronic Engineering at Shenzhen University. My research interests focus on the field of optical measurement, particularly in the application and development of event camera technology. In this area, I am actively participating in related research projects, exploring high-precision imaging techniques of event cameras in dynamic scenes.
+In terms of technical skills, I have solid experience in embedded development and am familiar with various development platforms and programming languages, enabling me to effectively carry out the collaborative design of hardware and software. Additionally, I have a deep understanding of hardware system design and implementation, allowing me to independently complete all stages from conceptual design to prototype production.
+I am passionate about applying theoretical knowledge to practical problems and hope to promote innovation and development in optical measurement technology through further research and practice. At the same time, I aspire to engage in in-depth academic exchanges with peers and experts to broaden my horizons and enhance my professional competence.
