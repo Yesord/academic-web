@@ -35,27 +35,15 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        Use this area to speak to your mission. I'm a junior in the Tianyong's team at SZU. I blog about machine learning, deep learning, and Integrated Circuit Design.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the CPOE.
         
         Please reach out to collaborate 😃
     design:
       columns: '1'
-  - block: collection
-    id: blog
-    content:
-      title: MyBlog
-      button:
-        text: Click here
-        url: https://hugoblox.com/templates/
-      filters:
-        folders:
-          - publication
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
+
+      
   # - block: collection
   #   id: papers
   #   content:
