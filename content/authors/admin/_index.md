@@ -116,7 +116,7 @@ skills:
         description: ''
         percent: 80
         icon: code-bracket
-      - name: Data Science
+      - name: Circuit Design
         description: ''
         percent: 100
         icon: chart-bar
@@ -128,13 +128,13 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: fitness
         description: ''
-        percent: 60
+        percent: 100
         icon: person-simple-walk
       - name: Cats
         description: ''
-        percent: 100
+        percent: 50
         icon: cat
       - name: Photography
         description: ''
@@ -142,11 +142,11 @@ skills:
         icon: camera
 
 languages:
-  - name: English
-    percent: 100
   - name: Chinese
+    percent: 100
+  - name: English
     percent: 75
-  - name: Portuguese
+  - name: Japenese
     percent: 25
 
 # Awards.
