@@ -12,10 +12,29 @@
     <link rel="stylesheet" href="./static/css/color-3.css" class="alternate-style" title="color-3" >
     <link rel="stylesheet" href="./static/css/color-4.css" class="alternate-style" title="color-4" >
     <link rel="stylesheet" href="./static/css/color-5.css" class="alternate-style" title="color-5" >
+    <!-- <link rel="stylesheet" href="./static/css/bubble.css" class="alternate-style" title="color-5" > -->
     
 </head>
 <body class="dark">
+    
+    <div id="app">
+        <div class="hero">
+            <h1>Sphere</h1>
+            <h2>Packing</h2>
+        </div>
+        <div class="buttons">
+            <button type="button" id="gravity-btn">
+                Toggle gravity
+            </button>
+            <button type="button" id="colors-btn">
+                Random colors
+            </button>
+        </div>
+        <canvas id="webgl-canvas"></canvas>
+    </div>
+    
     <div class="main-container">
+        
         <div class="aside">
             <div class="logo">
                 <a href="#"><span>A</span>tlas</a>
@@ -39,14 +58,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
-                            <h3 class="hello">Hello, my name is <span class="name">Leo Souza</span></h3>
-                            <h3 class="profession">I'm a <span class="typing">Web Designer</span></h3>
-                            <p>I'm a web designer with extensive experience for over 10 years. My experience is to create website designs, graphic designs and much more...</p>
-                            <a href="#" class="btn ">Download CV</a>
+                            <h3 class="hello">Hello, my name is <span class="name">Xu Ruolun</span></h3>
+                            <!-- Nolen Hsu -->
+                            <h3 class="profession">I'm a/an <span class="typing">Undergraduate</span></h3>
+                            <p>I'm a student with extensive experience for over 10 years hh. My experience is to create electronic designs, web designs and much more...</p>
+                            <a href="./static/resource/resume.pdf" class="btn ">Download CV</a>
                         </div>
 
                         <div class="home-img padd-15">
-                            <img src="https://i.postimg.cc/PJbckj4M/hero.jpg" alt="hero image">
+                            <img src="./static/img/me.png" alt="hero image">
                         </div>
                     </div>
                 </div>
@@ -64,8 +84,10 @@
                         <div class="about-content padd-15">
                             <div class="row">
                                 <div class="about-text padd-15">
-                                    <h3>I'm Leo Souza and <span>Web Designer</span></h3>
-                                    <p>As a web designer, I'm specialized in creating visually appealing websites that not only captivate visitors but also provide seamless navigation and functionality.  I continuously seek inspiration from current design trends and am committed to honing my skills through ongoing learning and experimentation. My ultimate goal is to craft digital experiences that engage users and drive results for my clients</p>
+                                    <h3>I'm Xu Ruolun and <span>undergraduate</span></h3>
+                                    <p> My research interests focus on the field of optical measurement, particularly in the application and development of event camera technology. In this area, I am actively participating in related research projects, exploring high-precision imaging techniques of event cameras in dynamic scenes.
+                                        In terms of technical skills, I have solid experience in embedded development and am familiar with various development platforms and programming languages, enabling me to effectively carry out the collaborative design of hardware and software. Additionally, I have a deep understanding of hardware system design and implementation, allowing me to independently complete all stages from conceptual design to prototype production.
+                                        I am passionate about applying theoretical knowledge to practical problems and hope to promote innovation and development in optical measurement technology through further research and practice. At the same time, I aspire to engage in in-depth academic exchanges with peers and experts to broaden my horizons and enhance my professional competence.</p>
                                 </div>
                             </div>
 
@@ -73,31 +95,31 @@
                                 <div class="personal-info padd-15">
                                     <div class="row">
                                         <div class="info-item padd-15">
-                                            <p>Birthday: <span>02 Nov 2000</span></p>
+                                            <p>Birthday: <span>12 Dec 2004</span></p>
                                         </div>
 
                                         <div class="info-item padd-15">
-                                            <p>Age: <span>24</span></p>
+                                            <p>Age: <span>20</span></p>
                                         </div>
 
                                         <div class="info-item padd-15">
-                                            <p>Website: <span>www.domain.com</span></p>
+                                            <p>Website: <span>guide.yesord.top</span></p>
                                         </div>
 
                                         <div class="info-item padd-15">
-                                            <p>Email: <span>info@gmail.com</span></p>
+                                            <p>Email: <span>xuruolun666@gmail.com</span></p>
                                         </div>
 
                                         <div class="info-item padd-15">
-                                            <p>Degree: <span>CS</span></p>
+                                            <p>Degree: <span>OISE</span></p>
                                         </div>
 
                                         <div class="info-item padd-15">
-                                            <p>Phone: <span>+17 678 1999</span></p>
+                                            <p>Phone: <span>+86 18923434625</span></p>
                                         </div>
 
                                         <div class="info-item padd-15">
-                                            <p>City: <span>São Paulo</span></p>
+                                            <p>City: <span>Shenzhen</span></p>
                                         </div>
 
                                         <div class="info-item padd-15">
@@ -114,7 +136,15 @@
                                 <div class="skills padd-15">
                                     <div class="row">
                                         <div class="skill-item padd-15">
-                                            <h5>CSS</h5>
+                                            <h5>Python</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 85%;"></div>
+                                                <div class="skill-percent">85%</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="skill-item padd-15">
+                                            <h5>HTML</HTml></h5>
                                             <div class="progress">
                                                 <div class="progress-in" style="width: 76%;"></div>
                                                 <div class="skill-percent">76%</div>
@@ -122,34 +152,26 @@
                                         </div>
 
                                         <div class="skill-item padd-15">
-                                            <h5>JS</h5>
+                                            <h5>C/C++</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 86%;"></div>
-                                                <div class="skill-percent">86%</div>
+                                                <div class="progress-in" style="width: 70%;"></div>
+                                                <div class="skill-percent">70%</div>
                                             </div>
                                         </div>
 
                                         <div class="skill-item padd-15">
-                                            <h5>PHP</h5>
+                                            <h5>C#</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 66%;"></div>
-                                                <div class="skill-percent">66%</div>
+                                                <div class="progress-in" style="width: 61%;"></div>
+                                                <div class="skill-percent">61%</div>
                                             </div>
                                         </div>
 
                                         <div class="skill-item padd-15">
-                                            <h5>HTML</h5>
+                                            <h5>MatLab</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 96%;"></div>
-                                                <div class="skill-percent">96%</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="skill-item padd-15">
-                                            <h5>Bootstrap</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 76%;"></div>
-                                                <div class="skill-percent">76%</div>
+                                                <div class="progress-in" style="width: 74%;"></div>
+                                                <div class="skill-percent">74%</div>
                                             </div>
                                         </div>
                                     </div>
@@ -165,29 +187,29 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2013 - 2015
+                                                        <i class="fa fa-calendar"></i> 2019 - 2022
                                                     </h3>
-                                                    <h4 class="timeline-title">Master in Computer Science</h4>
-                                                    <p class="timeline-text">I learnt a wide range of topics that are essential to understanding both the theory and practical aspects of computing. This involves programming fundamentals, computer architecture, operating systems, databases, software engineering, problem solving, collaboration and communication soft skills.</p>
+                                                    <h4 class="timeline-title">senior high school diploma in SSSHS</h4>
+                                                    <p class="timeline-text">My three years at Shenzhen Second Senior High School cultivated academic resilience through rigorous coursework and competitions, nurtured critical thinking via collaborative problem-solving, and instilled values of perseverance and inclusivity under the school's ethos of "阳光进取，平实包容". Teachers' mentorship strengthened both intellectual curiosity and adaptability to challenges, while teamwork in cultural events deepened empathy and leadership.</p>
                                                 </div>
 
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2011 - 2014
+                                                        <i class="fa fa-calendar"></i> 2022 - Today
                                                     </h3>
-                                                    <h4 class="timeline-title">Master Degree</h4>
-                                                    <p class="timeline-text">I chose my master degree in technology. There I deepened my knowledge, enhanced my skills in the area and learnt how to increase my career prospects in a competitive job market.</p>
+                                                    <h4 class="timeline-title">Bachelor Degree in SZU</h4>
+                                                    <p class="timeline-text">I learnt a wide range of topics that are essential to understanding both the theory and practical aspects of computing. This involves programming fundamentals, computer architecture, operating systems, databases, software engineering, problem solving, collaboration and communication soft skills.</p>
                                                 </div>
 
-                                                <div class="timeline-item">
+                                                <!-- <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> 2007 - 2010
                                                     </h3>
                                                     <h4 class="timeline-title">Bachelor Degree</h4>
                                                     <p class="timeline-text">There I learnt foundational courses and computer sciences fundamentals. In the institution, I chose my specialization in web-development that involves front-end and back-end technologies, user interface designs and content management systems.</p>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -201,13 +223,13 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020 - Today
+                                                        <i class="fa fa-calendar"></i> 2010 - Today
                                                     </h3>
-                                                    <h4 class="timeline-title">Senior Front-end Designer</h4>
-                                                    <p class="timeline-text">I can design complex software systems. My decisions impact scalability, maintainability, and overall system architecture. Also, I mentor less experienced team members, helping them grow and learn.</p>
+                                                    <h4 class="timeline-title">Student</h4>
+                                                    <p class="timeline-text">I still in my study so that I have no experience in any company, but I believe there is still a beam of light in my future</p>
                                                 </div>
 
-                                                <div class="timeline-item">
+                                                <!-- <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> 2017 - 2019
@@ -223,7 +245,7 @@
                                                     </h3>
                                                     <h4 class="timeline-title">Graphic Designer</h4>
                                                     <p class="timeline-text">I can create logos, color schemes and typography for a brand's identity. Also I develop graphics for websites, social media and digital ads with applications that enhance user experience.</p>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -248,8 +270,8 @@
                                 <div class="icon">
                                     <i class="fa fa-mobile-alt"></i>
                                 </div>
-                                <h4>Web Design</h4>
-                                <p>I offer custom website designs, responsive design to ensure compatibility across devices, and UI/UX design to enhance user experience</p>
+                                <h4>Electronic Design</h4>
+                                <p>I familiar with JLC and Altium Designer. I can provide services for schematic drawing and PCB routing.</p>
                             </div>
                         </div>
 
@@ -258,8 +280,8 @@
                                 <div class="icon">
                                     <i class="fa fa-laptop-code"></i>
                                 </div>
-                                <h4>Graphic Design</h4>
-                                <p>I design logos, icons, illustrations, and other visual assets that enhance the website's branding and aesthetic appeal</p>
+                                <h4>Computer Vision Research</h4>
+                                <p>I have learnt some basic knowledge in the field of CV such as Machine Learning, Photographic Geometry and Linear Algebra...</p>
                             </div>
                         </div>
 
@@ -268,8 +290,8 @@
                                 <div class="icon">
                                     <i class="fa fa-palette"></i>
                                 </div>
-                                <h4>Digital Marketing</h4>
-                                <p>I build websites that enhances visual aesthetics, user experience, SEO, responsive design and mainly conversion optimization</p>
+                                <h4>Optical Design</h4>
+                                <p>I offer custom optical designs like peephole and Telescopic lens</p>
                             </div>
                         </div>
 
@@ -278,12 +300,12 @@
                                 <div class="icon">
                                     <i class="fa fa-code"></i>
                                 </div>
-                                <h4>UI/UX Solutions</h4>
-                                <p>I offer custom research and design to increase your customer satisfaction and obtain higher conversion rates</p>
+                                <h4>Embedded Development</h4>
+                                <p>I familiar with the development of MCU and Embedded Linux development board like STC(8051), STM and Jetson nano...I have experience to finish a task about Embedded Development.</p>
                             </div>
                         </div>
 
-                        <div class="service-item padd-15">
+                        <!-- <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-search"></i>
@@ -291,9 +313,9 @@
                                 <h4>Brand Consultancy</h4>
                                 <p>I build brands through cultural insights & strategic vision. Custom crafted business solution</p>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="service-item padd-15">
+                        <!-- <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
                                     <i class="fa fa-bullhorn"></i>
@@ -301,7 +323,7 @@
                                 <h4>Photography</h4>
                                 <p>I make high-quality photos of any category at a professional level.</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
@@ -380,33 +402,33 @@
                         </div>
                     </div>
 
-                    <h3 class="contact-title padd-15">Any Question? Contact us!</h3>
+                    <h3 class="contact-title padd-15">Any Question? Contact me!</h3>
                     <h4 class="contact-subtitle padd-15">I'm at your service</h4>
 
                     <div class="row">
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-phone"></i></div>
                             <h4>Call us on</h4>
-                            <p>+92 333 054 5218</p>
+                            <p>+86 18923434625</p>
                         </div>
 
 
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
                             <h4>Office</h4>
-                            <p>São Paulo</p>
+                            <p>Shenzhen</p>
                         </div>
 
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-envelope"></i></div>
                             <h4>Email</h4>
-                            <p>info@gmail.com</p>
+                            <p>xuruolun666@gmail.com</p>
                         </div>
 
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-globe"></i></div>
                             <h4>Website</h4>
-                            <p>www.domain.com</p>
+                            <p>guide.yesord.top</p>
                         </div>
                     </div>
                     <h3 class="contact-title padd-15">Send me an email</h3>
@@ -480,6 +502,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script src="./static/js/app.js"></script>
-    <!-- <script src="app.js"></script> -->
+    <!-- <script src="./static/js/bubble.js"></script> -->
 </body>
 </html>
