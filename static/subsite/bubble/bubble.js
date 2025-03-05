@@ -2,7 +2,7 @@
     const { default: Spheres1Background } = await import('https://cdn.jsdelivr.net/npm/threejs-components@0.0.17/build/backgrounds/spheres1.cdn.min.js');
   
     const bg = Spheres1Background(document.getElementById('webgl-canvas'), {
-      count: 300,
+      count: 350,
       minSize: 0.3,
       maxSize: 1,
       gravity: 0

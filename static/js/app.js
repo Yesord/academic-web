@@ -95,4 +95,8 @@ function asideSectionTogglerBtn(){
     for(let i = 0; i < totalSection; i++) { allSection[i].classList.toggle('open'); }
 }
 
+document.getElementById('get-start-btn').addEventListener('click', () => {
+    document.querySelector('.new-page').style.display = 'none';
+    document.querySelector('.main-container').style.display = 'block';
+});
 

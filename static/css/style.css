@@ -49,6 +49,7 @@ body { line-height: 1.5; font-size: 16px; font-family: 'Poppins', sans-serif; }
 .hidden { display: none !important; }
 /*.main-content { padding-left: 270px; }*/
 .padd-15 { padding-left: 15px; padding-right: 15px; }
+
 .container { max-width: 1100px; width: 100%; margin: auto; }
     .section .container { padding-top: 60px; padding-bottom: 70px; }
 .section-title { flex: 0 0 100%; max-width: 100%; margin-bottom: 60px; }
@@ -86,6 +87,22 @@ body { line-height: 1.5; font-size: 16px; font-family: 'Poppins', sans-serif; }
     transition: all .3s ease;
 }
     .btn:hover { transform: scale(1.05); }
+.get-start-btn {
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    border: none;
+    white-space: nowrap;
+    background: var(--skin-color);
+    transition: all .3s ease;
+}
+    .get-start-btn:hover { transform: scale(1.05); }
 .shadow-dark { box-shadow: 0 0 20px rgba(48, 46, 77, .15); }
 
 /* ASIDE */
@@ -320,6 +337,7 @@ body { line-height: 1.5; font-size: 16px; font-family: 'Poppins', sans-serif; }
 
     .contact .contact-info-item { flex: 0 0 100%; max-width: 100%; }
 }
+
 
 /* Style Switcher */
 
