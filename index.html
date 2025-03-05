@@ -7,7 +7,7 @@
     <link rel="icon" href="./static/img/favicon.ico">
     <link rel="stylesheet" href="./static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+    
     <link rel="stylesheet" href="./static/css/color-1.css" class="alternate-style" title="color-1" >
     <link rel="stylesheet" href="./static/css/color-2.css" class="alternate-style" title="color-2" >
     <link rel="stylesheet" href="./static/css/color-3.css" class="alternate-style" title="color-3" >
@@ -19,6 +19,7 @@
     <div class="new-page" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0; padding: 0;">
         <iframe src="./static/subsite/bubble/bubble.html" frameborder="0" class="bubble" style="width: 100%; height: 100%; border: none;"></iframe>
         <button type="button" class="get-start-btn" id="get-start-btn">Get Start</button>
+        
     </div>
     <div class="main-container", style="display: none;">
         
@@ -471,11 +472,16 @@
         <div class="style-switcher-toggler s-icon">
             <i class="fas fa-cog fa-spin"></i>
         </div>
+        
 
         <div class="day-night s-icon">
             <i class="fas "></i>
         </div>
 
+        <div class="jump s-icon" onclick="jumpToSection()">
+            <i class="fas fa-search "></i>
+        </div>
+        
         <h4>Theme Colors</h4>
 
         <div class="colors">
@@ -485,6 +491,8 @@
             <span class="color-4" onclick="setActiveStyle('color-4')"></span>
             <span class="color-5" onclick="setActiveStyle('color-5')"></span>
         </div>
+        
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>

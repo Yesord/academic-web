@@ -95,6 +95,11 @@ function asideSectionTogglerBtn(){
     for(let i = 0; i < totalSection; i++) { allSection[i].classList.toggle('open'); }
 }
 
+function jumpToSection() {
+    // 这里可以根据需要修改跳转到的目标元素的ID
+    window.location.href = './static/subsite/choice/choice.html';
+}
+// 处理get-start-btn
 document.getElementById('get-start-btn').addEventListener('click', () => {
     document.querySelector('.new-page').style.display = 'none';
     document.querySelector('.main-container').style.display = 'block';

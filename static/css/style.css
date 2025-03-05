@@ -87,6 +87,9 @@ body { line-height: 1.5; font-size: 16px; font-family: 'Poppins', sans-serif; }
     transition: all .3s ease;
 }
     .btn:hover { transform: scale(1.05); }
+
+
+    
 .get-start-btn {
     position: absolute;
     top: 65%;
@@ -373,6 +376,7 @@ body { line-height: 1.5; font-size: 16px; font-family: 'Poppins', sans-serif; }
         .style-switcher .s-icon i { line-height: 40px; }
     .style-switcher .style-switcher-toggler { top: 0; }
     .style-switcher .day-night { top: 55px; }
+    .style-switcher .jump { top: 110px; }
     .style-switcher h4 { margin: 0 0 10px; color: var(--text-black700); font-size: 16px; font-weight: 600; text-transform: capitalize; }
     .style-switcher .colors { display: flex; flex-wrap: wrap; justify-content: space-between; }
         .style-switcher .colors span { display: inline-block; height: 30px; width: 30px; border-radius: 50%; }
