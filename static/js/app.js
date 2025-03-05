@@ -105,3 +105,15 @@ document.getElementById('get-start-btn').addEventListener('click', () => {
     document.querySelector('.main-container').style.display = 'block';
 });
 
+// 检测是否是移动端设备
+function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+// 根据设备类型显示或隐藏页面部分
+window.onload = function() {
+    if (isMobileDevice()) {
+        document.querySelector('.new-page').style.display = 'none';
+        document.querySelector('.main-container').style.display = 'block';
+    }
+};
