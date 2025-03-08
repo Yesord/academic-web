@@ -27,7 +27,7 @@ window.addEventListener('load', () => {
 
 /* Typing Animation */
 
-var typed = new Typed('.typing', { strings: ["","Undergraduate", "Electronic Designer", "Web Designer", "Computer Vision Researcher", "Blogger"], typeSpeed: 100, Backspeed: 60, loop: true })
+var typed = new Typed('.typing', { strings: ["","大学生", "电子发烧友", "网页设计师", "计算机视觉学者", "博主"], typeSpeed: 100, Backspeed: 60, loop: true })
 
 /* Changing Aside Active Link */
 
@@ -97,14 +97,13 @@ function asideSectionTogglerBtn(){
 
 function jumpToSection() {
     // 这里可以根据需要修改跳转到的目标元素的ID
-    window.location.href = './static/subsite/choice/choice.html';
+    window.location.href = '../static/subsite/choice/choice.html';
 }
 
-function jumpToCN() {
+function jumpToEN() {
     // 这里可以根据需要修改跳转到的目标元素的ID
-    window.location.href = './CN/index.html';
+    window.location.href = '../index.html';
 }
-
 // 处理get-start-btn
 document.getElementById('get-start-btn').addEventListener('click', () => {
     document.querySelector('.new-page').style.display = 'none';
