@@ -388,6 +388,14 @@ body { line-height: 1.5; font-size: 16px; font-family: 'ZCOOL KuaiLe', sans-seri
     .style-switcher .color-4 { background: #1854B4; }
     .style-switcher .color-5 { background: #F021B2; }
 
+/* 统一 alt="portfolio image" 的图片尺寸 */
+img[alt="portfolio image"] {
+    width: 220px;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
 /* Create more 5 css files to enable Toggle style Switcher */
 
 /*

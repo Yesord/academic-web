@@ -308,6 +308,14 @@ body { line-height: 1.5; font-size: 16px; font-family: 'Poppins', sans-serif; }
             .contact .contact-form .form-item textarea.form-control { height: 140px; font-family: 'Poppins', sans-serif; }
     .contact .contact-form .btn { height: 50px; padding: 0 50px; cursor: pointer; font-family: 'Poppins', sans-serif; }
 
+/* 统一 alt="portfolio image" 的图片尺寸 */
+img[alt="portfolio image"] {
+    width: 220px;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
 @media (max-width: 1199px) {
 
     .aside { left: -270px; }
@@ -388,6 +396,9 @@ body { line-height: 1.5; font-size: 16px; font-family: 'Poppins', sans-serif; }
     .style-switcher .color-3 { background: #37B182; }
     .style-switcher .color-4 { background: #1854B4; }
     .style-switcher .color-5 { background: #F021B2; }
+
+
+
 
 /* Create more 5 css files to enable Toggle style Switcher */
 
